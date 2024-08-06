@@ -1,7 +1,71 @@
 # Introduction
+Welcome to the C&P By Design Reference Guide!  Here you will find information and guidance to developing software in Crude and Products.  
 - Add your project logo.
 - Write a short introduction to the project.
 - If you are using badges, add them here.
+
+
+```mermaid
+block-beta
+  columns 3
+  a:3
+  block:group1:2
+    columns 2
+    h i j k
+  end
+  g
+  block:group2:3
+    %% columns auto (default)
+    l m n o p q r
+  end
+
+```
+
+```mermaid
+---
+title: Example Git diagram
+---
+gitGraph
+   commit
+   commit
+   branch develop
+   checkout develop
+   commit
+   commit
+   checkout main
+   merge develop
+   commit
+   commit
+
+```
+
+
+```mermaid
+---
+title: Order example
+---
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+
+```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```mermaid
+graph LR
+A[Start] --> B{Is it working?}
+B -->|Yes| C[Success]
+B -->|No| D[Failure]
+```
+
 
 ## :ledger: Index
 
@@ -10,7 +74,7 @@
   - [Installation](#electric_plug-installation)
   - [Commands](#package-commands)
 - [Development](#wrench-development)
-  - [Pre-Requisites](#notebook-pre-requisites)
+  - [Pre-Requisites](#notebook-pre-requisites)    
   - [Developmen Environment](#nut_and_bolt-development-environment)
   - [File Structure](#file_folder-file-structure)
   - [Build](#hammer-build)  
